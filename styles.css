@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  background-color: #090314;
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden; 
+  color: #ffffff;
+}
+/*
+:root {
+    background-color: #090314;
+    font-family: 'Share Tech Mono', monospace;
+            
+            --card-bg: #120826;
+            --inner-card-bg: #090314;
+            --neon-pink: #dd5ed7;
+            --neon-cyan: #00f0ff;
+            --neon-yellow: #ffdd00;
+            --neon-green: #00ff66;
+            --text-white: #ffffff;
+            --text-muted: #d4d1da;
+}*/ 
+.navbar{
+    border: 3px solid  #dd5ed7;;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 42, 141, 0.5), 
+                0 0 10px rgba(255, 42, 141, 0.4), 
+                0 0 15px rgba(255, 42, 141, 0.3), 
+                0 0 20px rgba(255, 42, 141, 0.2);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 12px;
+  
+    
+}
+.logo-box{
+    background-color: #dd5ed7;
+    padding: 6px 10px;           
+    border-radius: 4px;
+    margin-right: 12px;
+    margin-left: 12px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.logo-name{
+    margin-right: 12px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.text-logo-name{
+    color:  #dd5ed7;
+    font-size: small;
+    font-family: 'Share Tech Mono', monospace;
+}
+.btnmenu{
+  background-color: transparent;
+  color:#ffffff;
+  border: 1px solid #dd5ed7;     
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+#btnmenuHome{
+background-color: #dd5ed7;
+border-color: #ffffff;
+box-shadow: 0 0 5px rgba(255, 42, 141, 0.5), 
+                0 0 10px rgba(255, 42, 141, 0.4), 
+                0 0 15px rgba(255, 42, 141, 0.3), 
+                0 0 20px rgba(255, 42, 141, 0.2);
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.btnmenu:hover {
+  background-color: rgba(217, 70, 239, 0.15);
+  color: #ffffff;
+  border-color: #d946ef;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Estilo para el botón activo (como HOME en la imagen) */
+.btnmenu.active {
+  background-color: #ff2a8d;     /* Rosa neón brillante */
+  color: #000000;               /* Texto negro */
+  border: 1px solid #ffffff;    /* Borde blanco */
+  font-weight: bold;
+  font-family: 'Share Tech Mono', monospace;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../IMG/hamburguesa.png") !important;
+  /*border: 1px solid #dd5ed7 !important;     
+  border-radius: 4px !important;*/
+
+}
+
+/**-------------------------------------------------------Banner -----------------------------------------------------------*/
+.bannerCyan{
+  width: 100%;
+  height: 30px;
+  background-color: #090314;
+  padding: 3px;
+  border-radius: 0px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+.bannerCyanLimits {
+  background-color: #00f0ff;
+  border-color: #00f0ff;
+  height: 100%;
+  border-radius: 4px;
+  margin-inline: 33px
+}
+.bannerText {
+  color: #000000;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  background-color: #00f0ff;
+  
+}
+.textMotion {
+  display: flex;       
+  width: max-content;  
+  white-space: nowrap;
+  animation: marquee-left 15s linear infinite;
+}
+.banner-text {
+  font-family: 'Share Tech Mono', monospace; 
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
+}
+/**-------------------------------------------------------ConteinerHero -----------------------------------------------------------*/
+.heroBg{
+  background-color: #000000;
+}
+.conteinerHero{
+  position: relative;
+  border: 2px solid #00f0ff ;
+  border-radius: 5px;
+  box-shadow: 
+    0 0 5px rgba(0, 240, 255, 0.5),   /* Brillo interno/cercano */
+    0 0 10px rgba(0, 240, 255, 0.4),  /* Brillo medio */
+    0 0 15px rgba(0, 240, 255, 0.3),  /* Brillo externo amplio */
+    0 0 20px rgba(0, 240, 255, 0.2) !important;
+    font-family: 'Share Tech Mono', monospace;
+  padding: 30px;
+  background-clip: padding-box;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  margin: 12px;
+  margin-left: 35px;
+  margin-right: 35px;
+  height: 300px
+
+}
+.heroDots{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  display: flex;
+  gap: 6px;
+}
+
+/* {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  display: flex;
+  gap: 6px;
+}*/
