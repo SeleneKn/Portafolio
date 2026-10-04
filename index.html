@@ -6,6 +6,7 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
@@ -27,8 +28,7 @@
     <!-------------------------------- MENU AND BUTTON HAMBURGUER ---------------------------------> 
                 <button class="hambur navbar-toggler custom-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuCyber" aria-controls="menuCyber" aria-expanded="false" aria-label="Toggle navigation">      
                     <span class="navbar-toggler-icon"></span>
-                 
-                    <div class="d-flex align-items-center gap-2 flex-wrap ms-auto mt-2 mt-md-0 text-nowrap">
+                    <div class=" mt-2 mt-md-0 conteinerBtnsMenu">
                          <button href="#home" id="btnmenuHome" class="btnmenu collapse navbar-collapse text-center" type="button">INICIO</button>
                          <button href="#servicios" class="btnmenu collapse navbar-collapse text-center" type="button">ACERCA DE MI</button>
                          <button href="#proyecto" class="btnmenu collapse navbar-collapse text-center" type="button">PROYECTOS</button>
@@ -40,12 +40,10 @@
 <!-------------------------------------------------------Banner----------------------------------------------------------->    
 
     <div class="bannerCyan overflow-hidden">
-        <div class="bannerCyanLimits d-flex align-items-center">
-             <!-------<div class="textMotion d-flex text-nowrap align-items-center">
-                <span class="bannerText px-3 ">  ★  WELCOME TO MY CORNER OF INTERNET ★ JAVA POWERED ★ BUG HUNTER ★ SAVED BY CONTRL+Z  </span>----------> 
-                <marquee class="textMotion bannerText d-flex text-nowrap" behavior="scroll" direction="left" scrollamount="6">
-                    ★  WELCOME TO MY CORNER OF INTERNET ★ JAVA POWERED ★ BUG HUNTER ★ SAVED BY CONTRL+Z
-                </marquee>
+        <div class="bannerCyanLimits">
+                <span class="textMotion mt-1">
+                    ★ WELCOME TO MY CORNER OF INTERNET ★ JAVA POWERED ★ BUG HUNTER ★ SAVED BY CONTRL+Z ★ CODE WRITTER ★ ADDICTED TO COFEE ★ SLEEP-DEPRIVED
+                </span>
             
             </div>
     </div>
@@ -55,45 +53,40 @@
 
 <div class="heroBg">
     <div class="conteinerHero">
-        <div class="heroDots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-         </div>
-
-        <div class="online">
-           ONLINE<span class="blink-dot"></span>
-        </div>
-            
     <!-------------------------------- INFO--------------------------------->            
         <div class="heroInfoContent">
+            <div class="heroDots">
+            <span class="dot1">.</span>
+            <span class="dot2">.</span>
+            <span class="dot3">.</span>
+         </div>
             <div class =heroInfo>
-                <div class="button">
-                    <span class="btnOpen"> OPEN TO WORK</span>
+                <div class="addOpen mt-3">
+                    <span class="addOpenText text-nowrap"> OPEN TO WORK</span>
                 </div>
-                <h1 class="titleHero">Selene Kanagusico López</h1>
-                <p class="subtitleHero">Developer Jr.</p>
+                <h1 class="titleHero mt-4 mb-4"><strong>Selene Kanagusico López</strong></h1>
+                <p class="subtitleHero text-nowrap mb-10">  Developer Jr. ✦ </p>
                 <p class="descriotionHero">
                     Desarrolladora Java Full Stack y entusiasta de la tecnología, dedicada a crear experiencias web expresivas y confiables, desde la base de datos hasta la interfaz. Transformo problemas complejos en sistemas limpios y con personalidad.
                 </p>
                 <div class="buttonsAction">
-                    <a href="#" class="btnAction btnPink">
-                       <i class="bi bi-download"></i> DOWNLOAD CV
+                    <a href="https://drive.google.com/file/d/1_eE5m6d0wuakmScWsSCk-LHsY9Eg7Utq/view?usp=sharing" class="btnAction btnPink">
+                       <i class="bi bi-download me-2 bgIcon"></i></i> DOWNLOAD CV
                     </a>
-                    <a href="#" class="btnAction btnGrey">
-                        <i class="bi bi-github"></i> GITHUB
+                    <a href="https://github.com/SeleneKn?tab=repositories" class="btnAction btnGrey">
+                        <i class="bi bi-github me-2 bgIcon"></i> GITHUB
                     </a>
-                        <a href="#" class="btnAction btnCyan">
-                    <i class="bi bi-linkedin"></i> LINKEDIN
+                        <a href="https://www.linkedin.com/in/selene-kanagusico-developer/?isSelfProfile=true" class="btnAction btnCyan">
+                    <i class="bi bi-linkedin me-2 bgIcon"></i> LINKEDIN
                         </a>
-                    <a href="#" class="btnAction btnRed">
-                        <i class="bi bi-envelope"></i> GMAIL
-                    </a>
                 </div>
             </div>
         </div>
     <!-------------------------------- PHOTO ---------------------------------> 
         <div class="photoHero">
+            <div class="online">
+              ONLINE<span class="blink-dot"></span>
+            </div>
             <div class="photoMe">
                 <img src="./IMG/photo2.jpg" alt="photoMe">
                 <div class="frame-overlay-top">'96 OCT 18</div>
