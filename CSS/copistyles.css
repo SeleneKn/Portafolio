@@ -1,270 +1,287 @@
-
-        :root {
-            --bg-color: #0d001a;
+* {
+  box-sizing: border-box;
+  background-color: #090314;
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden; 
+  color: #ffffff;
+}
+/*
+:root {
+    background-color: #090314;
+    font-family: 'Share Tech Mono', monospace;
+            
             --card-bg: #120826;
             --inner-card-bg: #090314;
-            --neon-pink: #e255db;
+            --neon-pink: #dd5ed7;
             --neon-cyan: #00f0ff;
             --neon-yellow: #ffdd00;
             --neon-green: #00ff66;
             --text-white: #ffffff;
-            --text-muted: #5a5566;
-        }
+            --text-muted: #d4d1da;
+}*/ 
+.navbar{
+    border: 3px solid  #dd5ed7;;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 42, 141, 0.5), 
+                0 0 10px rgba(255, 42, 141, 0.4), 
+                0 0 15px rgba(255, 42, 141, 0.3), 
+                0 0 20px rgba(255, 42, 141, 0.2);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 12px;
+  
+    
+}
+.logo-box{
+    background-color: #dd5ed7;
+    padding: 6px 10px;           
+    border-radius: 4px;
+    margin-right: 12px;
+    margin-left: 12px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.logo-name{
+    margin-right: 12px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.text-logo-name{
+    color:  #dd5ed7;
+    font-size: small;
+    font-family: 'Share Tech Mono', monospace;
+}
+.conteinerBtnsMenu{
+  display: flex;
+  justify-content: flex-end;
+}
+.btnmenu{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: max-content;
+  background-color: transparent;
+  color:#ffffff;
+  border: 1px solid #dd5ed7;     
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 8px 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+#btnmenuHome{
+background-color: #dd5ed7;
+border-color: #ffffff;
+box-shadow: 0 0 5px rgba(255, 42, 141, 0.5), 
+                0 0 10px rgba(255, 42, 141, 0.4), 
+                0 0 15px rgba(255, 42, 141, 0.3), 
+                0 0 20px rgba(255, 42, 141, 0.2);
+}
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-white);
-            font-family: 'Space Mono', 'Fira Code', monospace;
-            padding: 20px 10px;
-            overflow-x: hidden;
-        }
+/* Efecto al pasar el mouse por encima (Hover) */
+.btnmenu:hover {
+  background-color: rgba(217, 70, 239, 0.15);
+  color: #ffffff;
+  border-color: #d946ef;
+  font-family: 'Share Tech Mono', monospace;
+}
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg-color);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--neon-pink);
-            border-radius: 4px;
-        }
+/* Estilo para el botón activo (como HOME en la imagen) */
+.btnmenu.active {
+  background-color: #ff2a8d;     /* Rosa neón brillante */
+  color: #000000;               /* Texto negro */
+  border: 1px solid #ffffff;    /* Borde blanco */
+  font-weight: bold;
+  font-family: 'Share Tech Mono', monospace;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("../IMG/hamburguesa.png") !important;
+  /*border: 1px solid #dd5ed7 !important;     
+  border-radius: 4px !important;*/
 
-        /* Cyberpunk Neon Utility Borders */
-        .border-neon-pink {
-            border: 2px solid var(--neon-pink) !important;
-            box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
-        }
-        .border-neon-cyan {
-            border: 2px solid var(--neon-cyan) !important;
-            box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
-        }
-        .border-neon-yellow {
-            border: 2px solid var(--neon-yellow) !important;
-            box-shadow: 0 0 10px rgba(255, 221, 0, 0.4);
-        }
+}
 
-        /* Window Header Dots */
-        .window-dots {
-            display: flex;
-            gap: 6px;
-            align-items: center;
-        }
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-        }
-        .dot-pink { background-color: var(--neon-pink); }
-        .dot-cyan { background-color: var(--neon-cyan); }
-        .dot-yellow { background-color: var(--neon-yellow); }
+/**-------------------------------------------------------Banner -----------------------------------------------------------*/
+.bannerCyan{
+  width: 100%;
+  height: 30px;
+  background-color: #090314;
+  padding: 3px;
+  border-radius: 0px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.bannerCyanLimits {
+  background-color: #00f0ff;
+  border-color: #00f0ff;
+  height: 100%;
+  border-radius: 4px;
+  margin-inline: 33px;
+  overflow: hidden;
+  position: relative;
+}
+.textMotion {
+  white-space: nowrap;
+  color: #000000;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  background-color: #00f0ff;
+  display: inline-block;
+  padding-left: 100%;
+  animation: traslateText 50s linear infinite;
+}
+@keyframes traslateText {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+/**-------------------------------------------------------ConteinerHero -----------------------------------------------------------*/
+.heroBg{
+  background-color: #000000;
+}
+.conteinerHero{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  flex-wrap: wrap;
+  border: 2px solid #00f0ff ;
+  border-radius: 5px;
+  box-shadow: 
+    0 0 5px rgba(0, 240, 255, 0.5),   /* Brillo interno/cercano */
+    0 0 10px rgba(0, 240, 255, 0.4),  /* Brillo medio */
+    0 0 15px rgba(0, 240, 255, 0.3),  /* Brillo externo amplio */
+    0 0 20px rgba(0, 240, 255, 0.2) !important;
+    font-family: 'Share Tech Mono', monospace;
+  padding: 30px;
+  background-clip: padding-box;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  margin: 12px;
+  margin-left: 35px;
+  margin-right: 35px;
+  height: 700px
 
-        .status-online {
-            font-size: 0.75rem;
-            color: var(--neon-cyan);
-            letter-spacing: 1px;
-            font-weight: 700;
-        }
-
-        /* Navbar Styling */
-        .navbar-cyber {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 12px 20px;
-        }
-        .logo-box {
-            background: var(--neon-pink);
-            color: #000;
-            font-weight: 800;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 1.1rem;
-        }
-        .nav-btn {
-            background: transparent;
-            color: var(--text-white);
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 6px 14px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            transition: all 0.2s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .nav-btn:hover, .nav-btn.active {
-            background: var(--neon-pink);
-            color: #000;
-            border-color: var(--neon-pink);
-            box-shadow: 0 0 8px var(--neon-pink);
-        }
-
-        /* Ticker Bar */
-        .ticker-bar {
-            background: var(--neon-cyan);
-            color: #000;
-            font-weight: 800;
-            font-size: 0.85rem;
-            letter-spacing: 1.5px;
-            padding: 6px 0;
-            border-radius: 4px;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        /* Hero Card */
-        .hero-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 24px;
-            position: relative;
-        }
-        .badge-open-work {
-            background: transparent;
-            color: var(--neon-green);
-            border: 1px solid var(--neon-green);
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 20px;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .badge-dot {
-            width: 8px;
-            height: 8px;
-            background-color: var(--neon-green);
-            border-radius: 50%;
-            box-shadow: 0 0 6px var(--neon-green);
-        }
-
-        /* Action Buttons */
-        .btn-action {
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 0.8rem;
-            padding: 10px 18px;
-            text-transform: uppercase;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.1s ease;
-            text-decoration: none;
-        }
-        .btn-action:hover {
-            transform: translateY(-2px);
-        }
-        .btn-cv {
-            border: 2px solid var(--neon-pink);
-            color: var(--neon-pink);
-            background: transparent;
-        }
-        .btn-cv:hover {
-            background: var(--neon-pink);
-            color: #000;
-        }
-        .btn-github {
-            background: #1a0f35;
-            border: 1px solid #3d2b63;
-            color: #fff;
-        }
-        .btn-github:hover {
-            border-color: #fff;
-        }
-        .btn-linkedin {
-            background: var(--neon-cyan);
-            color: #000;
-            border: 2px solid var(--neon-cyan);
-        }
-        .btn-gmail {
-            background: #1a0f35;
-            border: 1px solid #3d2b63;
-            color: #fff;
-        }
-
-        /* Image WebCam Frame */
-        .webcam-frame {
-            background: #000;
-            border-radius: 12px;
-            position: relative;
-            overflow: hidden;
-        }
-        .webcam-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            filter: contrast(1.05) saturate(1.1);
-        }
-        .webcam-overlay-bottom {
-            position: absolute;
-            bottom: 12px;
-            left: 12px;
-            right: 12px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: var(--neon-yellow);
-        }
-        .rec-dot {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background: red;
-            border-radius: 50%;
-            margin-right: 4px;
-        }
-
-        /* Tech Stack & Stats */
-        .tech-tag {
-            border: 1px solid var(--neon-cyan);
-            color: var(--neon-cyan);
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 4px;
-            display: inline-block;
-        }
-        .stat-card {
-            background: var(--inner-card-bg);
-            border: 1px solid #2a1b4e;
-            border-radius: 6px;
-            padding: 16px;
-        }
-
-        /* Project Cards inside Outer Container */
-        .project-card {
-            background: var(--inner-card-bg);
-            border-radius: 8px;
-            padding: 16px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .project-badge {
-            font-size: 0.65rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        .project-icon-link {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-        .project-icon-link:hover {
-            color: var(--text-white);
-        }
-
-        /* Footer */
-        .footer-bar {
-            background: var(--card-bg);
-            border-radius: 6px;
-            padding: 10px 20px;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
+}
+.heroDots{
+  position: static;
+  top: 15px;
+  left: 20px;
+  display: flex;
+  gap: 6px;
+  font-weight: 900;
+}
+.dot1{
+-webkit-text-stroke: 4px #0dfc05;
+color: #0dfc05;
+}
+.dot2{
+-webkit-text-stroke: 4px #f1f505;
+color: #f1f505;
+}
+.dot3{
+-webkit-text-stroke: 4px #dd5ed7;
+color: #dd5ed7;
+}
+.addOpen{
+  display: inline-block;
+  border: 2px solid #0dfc05 ;
+  border-radius: 5px;
+  padding-inline: 4%;
+  width: max-content;
+  box-sizing: border-box;
+}
+.addOpenText{
+  display: block;
+  position: relative;
+  color: #0dfc05;
+  text-align: center;
+  max-width: 100%;
+  padding-inline:25px;
+}
+.addOpen:hover {
+  transform: translateY(-5px);
+}
+.subtitleHero{
+  color:#dd5ed7;
+  font-size: 24px;
+}
+.descriotionHero{
+  margin-top: 40px;
+}
+.buttonsAction{ /*Contener de botones*/
+  display: inline-flex;
+  justify-content:flex-end;
+  gap: 24px;
+  width: 100%;
+  margin-top: 35px;
+  padding: 10px ;
+}
+.btnAction{
+  display: inline-flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap: 14px;
+  color:#ffffff;
+  border: 2px solid #ffffff;
+  border-color: #ffffff;
+  box-shadow: 6px 6px 0px #6a24a8;
+  margin-bottom: 8px;
+  margin-inline-end: 8px;
+  padding: 10px 5px 5px 5px;
+}
+.bgIcon{
+  background-color: transparent ;
+}
+.btnPink{
+  background-color: #dd5ed7;
+  color:#ffffff;
+  border-color: #ffffff;
+  box-shadow: 4px 4px 0px #090314;
+  border: 2px solid #ffffff;
+  border-color: #ffffff;
+  box-shadow: 6px 6px 0px #6a24a8;
+  padding:15px;
+  text-decoration: none;
+}           
+.btnPink:hover{
+  background-color: rgba(217, 70, 239, 0.15);
+  color: #ffffff;
+  border-color: #d946ef;
+  font-family: 'Share Tech Mono', monospace;
+  transform: translateY(-5px);
+}
+.btnGrey{
+  background-color: #5a595a;
+  text-decoration: none;
+  padding:15px;
+}
+.btnGrey:hover{
+  background-color: rgba(230, 229, 231, 0.822);
+  color: #080808;
+  border-color: #d946ef;
+  font-family: 'Share Tech Mono', monospace;
+  transform: translateY(-5px);
+}
+.btnCyan{
+  background-color: #00f0ff;
+  text-decoration: none;
+  padding:15px;
+}
+.btnCyan:hover{
+  background-color: rgba(12, 117, 236, 0.822);
+  color: #fdfcfc;
+  border-color: #d946ef;
+  font-family: 'Share Tech Mono', monospace;
+  transform: translateY(-5px);
+}
