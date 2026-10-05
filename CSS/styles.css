@@ -37,12 +37,10 @@
 .conteinerBtnsMenu{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .btnmenu{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  min-width: max-content;
   background-color: transparent;
   color:#ffffff;
   border: 1px solid #dd5ed7;     
@@ -86,9 +84,8 @@ box-shadow: 0 0 5px rgba(255, 42, 141, 0.5),
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("../IMG/hamburguesa.png") !important;
-  /*border: 1px solid #dd5ed7 !important;     
-  border-radius: 4px !important;*/
-
+  border: 1px solid #dd5ed7 !important;     
+  border-radius: 4px !important;
 }
 
 /**-------------------------------------------------------Banner -----------------------------------------------------------*/
