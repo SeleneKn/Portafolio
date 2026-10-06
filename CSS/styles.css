@@ -179,7 +179,7 @@ color: #dd5ed7;
 }
 .addOpen{
   display: inline-block;
-  border: 2px solid #0dfc05 ;
+  border: 2px solid #0dfc05;
   border-radius: 5px;
   padding-inline: 4%;
   width: max-content;
@@ -195,6 +195,9 @@ color: #dd5ed7;
 }
 .addOpen:hover {
   transform: translateY(-5px);
+  color: #f7f8f7;
+  border-color: #fdfcfc;
+  
 }
 .subtitleHero{
   color:#dd5ed7;
@@ -324,4 +327,31 @@ animation: traslateText 60s linear infinite;
   margin: 12px;
   padding: 20px;
 }
-  
+
+/*********************************************************************************/
+/*************************************ABOUT ME************************************/
+/*********************************************************************************/
+.contenierTSEA{
+  border: 3px solid  #dd5ed7;;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(255, 42, 141, 0.5), 
+              0 0 10px rgba(255, 42, 141, 0.4), 
+              0 0 15px rgba(255, 42, 141, 0.3), 
+              0 0 20px rgba(255, 42, 141, 0.2);
+}
+.resumePer{
+  color: #adf505;
+}
+.terminalInfo p{
+  color:#00f0ff;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  background-color: transparent;
+  margin-inline-start: 15px;
+}
+.techImg:hover{
+  transform: translateY(-5px);
+}
+
+ 
