@@ -27,3 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarComponente("menu.html", "menuContainerEnHTML");
   cargarComponente("footer.html", "footerContainerEnHTML");
 });
+
+
+
+
+//Popover
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+});
