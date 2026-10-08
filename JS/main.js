@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarComponente("./html/menu.html", "menuContainer");
   cargarComponente("./html/footer.html", "footerContainer");
   cargarComponente("./html/banner.html", "bannerContainer");
+  cargarComponente("./html/dots.html", "dotsContainer");
 
 
   cargarComponente("menu.html", "menuContainerEnHTML");
