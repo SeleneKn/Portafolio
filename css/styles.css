@@ -454,4 +454,13 @@ height: 40px;
 .translateImg:hover{
   transform: translateY(-5px);
 }
- 
+.bgimgt{
+  background-image: url(../IMG/vaporwave-sunset.gif);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.bgimgtB{
+  background-image: url(../IMG/fondo.gif);
+  background-size: contain;
+  background-repeat: repeat;
+} 
