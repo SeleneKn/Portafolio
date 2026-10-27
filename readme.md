@@ -1,10 +1,4 @@
-# 📘 README.md — Portafolio Selene Kanagusico
 
-Aquí tienes un `README.md` completo y profesional, en formato Markdown, listo para pegar en la raíz de tu proyecto (o subir a GitHub).
-
----
-
-```markdown
 # 🌸 Portafolio Personal — Selene Kanagusico
 
 > Portafolio web con estética **synthwave / cyberpunk 80s** 🎮🌆
@@ -242,90 +236,6 @@ El sitio se adapta a:
 
 ---
 
-## 🔧 Configuración personalizable
-
-### Cambiar el correo destinatario del formulario
-
-En `JS/main.js`, dentro de `enviarPorGmail()`:
-
-```javascript
-const destinatario = "selenekanagusico26@gmail.com";
-```
-
-Cámbialo por el correo al que quieras que lleguen los mensajes.
-
-### Cambiar el correo visible en la página
-
-En `html/Contac.html`, busca:
-
-```html
-<p>selenekanagusico26@outlook.com</p>
-```
-
-### Cambiar el CV descargable
-
-Reemplaza `pdf/CurriculumSelenepdf.pdf` por tu nuevo archivo con el mismo nombre, o actualiza la ruta en:
-
-- `html/menu.html` (botón CV DIRECT)
-- `index.html` (botón Download CV)
-
-### Cambiar la foto de perfil
-
-Reemplaza `IMG/photo.jpg` por tu nueva imagen.
-
----
-
-## 🐛 Problemas conocidos y soluciones
-
-### ❌ "No se cargan el menú / footer / banner"
-
-**Causa:** Estás abriendo `index.html` con `file://`.
-**Solución:** Usa un servidor local (Live Server, Python, Node).
-
-### ❌ "La música no suena"
-
-**Causa 1:** Falta el archivo `audio/synthwave.mp3`.
-**Solución:** Descárgalo y colócalo en la carpeta `audio/`.
-
-**Causa 2:** El navegador bloquea el autoplay.
-**Solución:** Haz clic en cualquier parte de la página una vez — el player arrancará solo.
-
-### ❌ "Al cambiar de página la música se reinicia"
-
-**Causa:** Es el comportamiento normal de HTML multi-página.
-**Solución:** El `main.js` ya usa `sessionStorage` para **reanudar** desde donde iba. Hay un micro-corte de ~200ms entre páginas (inevitable sin iframe/SPA).
-
-### ❌ "El formulario no envía"
-
-**Causa:** Los campos deben estar llenos.
-**Solución:** Completa nombre, correo y mensaje. Se abrirá Gmail con el mensaje prellenado.
-
----
-
-## 🧪 Testing rápido
-
-| Test | Cómo verificar |
-|------|----------------|
-| ✅ Componentes cargan | El menú y footer aparecen en todas las páginas |
-| ✅ Música persiste | Cambia de página → la música sigue |
-| ✅ Volumen persiste | Ajusta volumen → cambia de página → se mantiene |
-| ✅ Efectos de clic | Haz clic → ver ripple + partículas + símbolo |
-| ✅ Formulario | Llena los 3 campos → click enviar → abre Gmail |
-| ✅ Responsive | Redimensiona a móvil → menú hamburguesa funciona |
-
----
-
-## 🗺️ Roadmap / Mejoras futuras
-
-- [ ] Migrar a SPA (React / Vue) para música sin cortes.
-- [ ] Envío de correo vía **EmailJS** o **Formspree** (sin abrir Gmail).
-- [ ] Modo claro/oscuro.
-- [ ] Agregar más proyectos al portafolio.
-- [ ] Internacionalización (ES / EN).
-- [ ] PWA (funcionar offline).
-- [ ] Animaciones con GSAP o Framer Motion.
-
----
 
 ## 👩‍💻 Autora
 
