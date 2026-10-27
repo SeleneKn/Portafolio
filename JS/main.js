@@ -334,3 +334,20 @@ function enviarPorGmail(event) {
   // Feedback visual al usuario
   alert("✅ Se abrirá Gmail con tu mensaje prellenado. Solo pulsa 'Enviar'.");
 }
+
+/* ============================================================
+   📄 ABRIR CV — ruta robusta para GitHub Pages
+   ============================================================ */
+function abrirCV() {
+  // Detecta si estamos dentro de /html/ o en la raíz
+  // Si la URL actual incluye '/html/', estamos en una subpágina.
+  const enSubcarpeta = window.location.pathname.includes("/html/");
+
+  // Si estamos en /html/AboutMe.html, la ruta correcta es '../pdf/...'
+  // Si estamos en /index.html, la ruta correcta es './pdf/...'
+  const rutaCV = enSubcarpeta
+    ? "../pdf/CurriculumSelenepdf.pdf"
+    : "./pdf/CurriculumSelenepdf.pdf";
+
+  window.open(rutaCV, "_blank");
+}
